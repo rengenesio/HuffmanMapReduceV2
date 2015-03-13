@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_jar" name="Create Jar for Project HuffmanMapReduce">
+    <target name="create_jar">
+	<jar destfile="./release/huffmanmapreduce.jar" basedir="./bin">
+		<manifest>
+			<attribute name="Main-Class" value="br.ufrj.ppgi.huffmanmapreduce.Main"/>
+		</manifest>
+	</jar>
+    </target>
+    <target name="create_tddjar">
+	<jar destfile="./release/tdd.jar" basedir="./bin">
+		<manifest>
+			<attribute name="Main-Class" value="br.ufrj.ppgi.huffmanmapreduce.tdd.TddMain"/>
+		</manifest>
+	</jar>
+    </target>
+</project>
